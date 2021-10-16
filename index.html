@@ -2,24 +2,48 @@
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Karina Yackovchuk</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Карина Яковчук</h1>
-    <img width="300px"
-        src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.6435-9/244646323_1072660910209558_7869215528543611919_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=gbAryE0Q6cMAX_EmJMQ&_nc_ht=scontent-arn2-2.xx&oh=ce04de4b49c1f65445c8fee62ba1264b&oe=618D4AF3"
-        alt="мое фото">
-    <br>
-    <h4 class="myself">Обо мне</h4>
 
-    <p>Привет!<br>Меня зовут Карина. Мне 21 год. На данный момент я студентка четвертого курса юридического факультета.
-        <br> С раннего детсва я ощущаю тягу к рисованию. И это неплохо у меня получается.<br> Мне нравится петь. Я бы
-        хотела научиться играть на фортепиано.<br> В свободное время я осваиваю этот навык.<br> Мое любимое время года -
-        осень.
-    </p>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInTopLeft fio">Карина Яковчук</h1>
+        <img class="photo animate__animated animate__zoomIn" width="300px"
+            src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.6435-9/244646323_1072660910209558_7869215528543611919_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=gbAryE0Q6cMAX_EmJMQ&_nc_ht=scontent-arn2-2.xx&oh=ce04de4b49c1f65445c8fee62ba1264b&oe=618D4AF3"
+            alt="мое фото">
+        <br>
+        <h4 class="myself">Обо мне</h4>
 
+        <p class="text">Привет!<br>Меня зовут Карина. Мне 21 год. На данный момент я студентка четвертого курса
+            юридического
+            факультета.
+            <br> С раннего детства я ощущаю тягу к рисованию. И это неплохо у меня получается.<br> Мне нравится петь. Я
+            бы
+            хотела научиться играть на фортепиано.<br> В свободное время я осваиваю этот навык.<br> Мое любимое время
+            года -
+            осень.
+        </p>
+
+        <button id='but'>hello</button>
+    </div>
+
+    <script>
+        but.onclick = function () {
+            alert('Привет!')
+            // swal("Good job!", "You clicked the button!", "success")
+        }
+    </script>
 </body>
 
 </html>
